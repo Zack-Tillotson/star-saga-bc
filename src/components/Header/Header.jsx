@@ -11,11 +11,10 @@ export default React.createClass({
       <InlineCss stylesheet={styles} componentName="component">
         <header>
           <Link to="/">
-            <h1>
               <div className="imageContainer">
-                <img src="/assets/logo.png" alt="Jumpstart" />
+                <img src="/assets/logo.png" alt="Star Saga BC" />
               </div>
-            </h1>
+              <h1>Star Saga BC</h1>
           </Link>
           {this.props.preferencesOpen && (
             <Link to="/">

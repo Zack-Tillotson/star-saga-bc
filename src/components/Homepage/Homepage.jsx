@@ -11,7 +11,7 @@ const Homepage = React.createClass({
   render() {
     return (
       <InlineCss stylesheet={styles} componentName="container">
-        <h1>Web Jumpstart</h1>
+        <h1>Star Saga BC</h1>
         <Link to="/preferences/">Preferences</Link>
         {this.props.children}
       </InlineCss>

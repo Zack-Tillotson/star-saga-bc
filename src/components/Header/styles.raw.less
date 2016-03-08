@@ -3,7 +3,6 @@ component {
   header {
     text-align: left;
     color: #eee;
-    background: #0D3D65;
     padding: 0 50px;
     position: relative;
 
@@ -23,38 +22,21 @@ component {
       font-size: 30px;
       font-weight: 300;
       letter-spacing: 5px;
-      text-shadow: 0 0 3px #000;
       position: relative;
-      height: 80px;
+      top: -20px;
+    }
 
-      .imageContainer {
+    .imageContainer {
+      display: inline-block;
+      
+      img {          
         display: inline-block;
-        background: #fff;        
-        border-radius: 150px;
-        position: absolute;
-        top: -15px;
-        z-index: 0;
-        text-align: center;
-        width: 120px;
-        height: 120px;
-
-        img {          
-          display: inline-block;
-          width: 100px;
-          height: 100px;
-          position: absolute;
-          top: 10px;
-          left: 10px;
-        }
-
-        &:hover {
-          background: #eee;
-        }
+        height: 75px;
+        left: 10px;
       }
 
-      .title {
-        margin-left: 110px;
-        padding: 8px;
+      &:hover {
+        background: #eee;
       }
     }
   }
