@@ -2,7 +2,7 @@ import React from 'react';
 import InlineCss from "react-inline-css";
 
 import {Link} from 'react-router';
-import Preferences from '../Preferences';
+import Game from '../GameContainer';
 
 import styles from './styles';
 
@@ -12,8 +12,7 @@ const Homepage = React.createClass({
     return (
       <InlineCss stylesheet={styles} componentName="container">
         <h1>Star Saga BC</h1>
-        <Link to="/preferences/">Preferences</Link>
-        {this.props.children}
+        <Game />
       </InlineCss>
     );
   }
