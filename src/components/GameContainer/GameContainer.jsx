@@ -2,17 +2,26 @@ import React from 'react';
 import InlineCss from "react-inline-css";
 
 import styles from './styles';
-import gameEngine from './engine';
+import engineStates from '../../engine/states';
 
 const GameContainer = React.createClass({
 
 	componentDidMount() {
 		this.app = new PLAYGROUND.Application({
+
+			scale: 1,
+			smoothing: true,
 			container: this.refs.gameContainer,
+
 			ready() {
-				this.setState(gameEngine.game);
+				this.setState(engineStates.game);
 			}
 		});
+		window.x = this.app;
+	},
+
+	componentWillUnmount() {
+		this.app.kill()
 	},
 
   render() {
