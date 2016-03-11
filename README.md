@@ -1,4 +1,4 @@
-# Jumpstart
+# Star Saga BC
 Zack Tillotson
 
 ## Development
@@ -23,6 +23,6 @@ npm install -g webpack-dev-server
 
 ## Description
 
-Boilerplate for my react/redux based web applications which use firebase as a backend.
+Investigations into creating a web version of the classic Computer + Pen & paper RPG Star Saga
 
 Copyright 2015 Zachery Tillotson
